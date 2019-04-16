@@ -3,6 +3,7 @@ let store = require('../store');
 module.exports = {
     getPosts(req, res){
         res.send(store.posts)    
+        console.log(store.posts);
     },
     addPost(req, res){ 
         if(!req.body){return res.sendStatus(400)}
