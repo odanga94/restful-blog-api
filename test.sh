@@ -1,0 +1,8 @@
+curl -H "Content-Type: application/json" -X POST -d '{"name": "Top 10 ES6 Features", "url":"http://webapplog.com/es6", "text": ""}'  "http://localhost:3000/posts" 
+curl "http://localhost:3000/posts/0/comments" 
+curl -H 'Content-Type: application/json' -X PUT -d '{"name": "Top 10 ES6 Features Every Developer Must Know", "url":"http://webapplog.com/es6", "text": ""}' "http://localhost:3000/posts/0"
+curl -H "Content-Type: application/json" -X POST -d '{"text": "Express is awesome"}'  "http://localhost:3000/posts/0/comments" 
+curl -H 'Content-Type: application/json' -X PUT -d '{"text": "We will use express for Jobo"}'  "http://localhost:3000/posts/0/comments/0" 
+curl "http://localhost:3000/posts" 
+curl -X DELETE "http://localhost:3000/posts/0/comments/0" 
+curl -X DELETE "http://localhost:3000/posts/0" 
